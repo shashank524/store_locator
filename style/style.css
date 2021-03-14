@@ -1,0 +1,216 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.name-div{
+    position: absolute;
+    z-index: 100;
+    font-size: 65px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    top: 70px;
+    left: 70px;
+}
+.search-container{
+    display: flex;
+    position: absolute;
+    z-index: 70;
+    top: 150px;
+    left: 70px;
+    width: 400px;
+    height: 60px;
+    background-color: rgba(48, 48, 48, 0.933);
+    border-radius: 30px;
+}
+.search-container .search {
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-grow: 1;
+    align-items: center;
+    display: flex;
+}
+.search-container input{
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 25px;
+}
+#zip-code-input:focus{
+    outline: none;
+    justify-content: space-around;
+}
+
+.search i{
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.store-list-container{
+    width: 300px;
+    position: absolute;
+    z-index: 100;
+    background: white;
+    left: 100px;
+    top: 230px;
+    border-radius: 30px;
+    bottom: 15px;
+    overflow-y: auto;
+}
+.store-container-background{
+    display: flex;
+    flex-grow: 1;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 20%;
+    padding-left: 8px;
+    padding-right: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+.store-container-background :hover{
+    background-color: #ccc;
+}
+.search-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.store-list {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-left: 10px;
+    overflow-y: scroll;
+    flex-grow: 1;
+}
+
+.store-address{
+    font-size: 18px;
+    color: rgb(66, 66, 66);
+    margin-top: 20px;
+}
+.store-phone-number{
+    font-size: 15px;
+    color: #b5adad;
+    margin-bottom: 15px; 
+}
+
+.store-container{
+    border-bottom: 1px solid rgb(65, 65, 65);
+    cursor: pointer;
+
+}
+.store-address span{
+    display: block;
+}
+.store-number-container{
+    width: 30px;
+    height: 30px;
+    background-color: #454e53;
+    color: #b5adad;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.store-info-container{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px   ;
+}
+.store-info-window{
+    min-width: 250px;
+    font-size: 15px;
+    padding: 8px;
+    z-index: 200;
+}
+
+.store-info-status{
+    margin-top: 6px;
+    border-bottom: 1px solid #000029;
+    padding-bottom: 6px;
+
+}
+.store-info-name{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+.store-info-address{
+    display: flex;
+    margin-top: 6px;
+
+}
+.store-info-phone{
+    display: flex;
+    margin-top: 6px;
+}
+
+.circle{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(167, 167, 207);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: 6px;
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width:800px){
+    .search-container {
+        display: flex;
+        position: absolute;
+        z-index: 100;
+        top: 110px;
+        left: 20px;
+        width: 200px;
+        height: 60px;
+        background-color: rgba(48, 48, 48, 0.933);
+        border-radius: 30px;
+    }
+
+    .store-list-container {
+        width: 200px;
+        position: absolute;
+        z-index: 100;
+        background: white;
+        left: 20px;
+        top: 200px;
+        border-radius: 30px;
+        bottom: 15px;
+        overflow-y: auto;
+    }
+
+    .name-div {
+        position: absolute;
+        z-index: 100;
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+        top: 50px;
+        left: 20px;
+    }
+    .store-address {
+        font-size: 12px;
+        color: rgb(66, 66, 66);
+        margin-top: 20px;
+    }
+
+    .store-phone-number {
+        font-size: 12px;
+        color: #414141;
+        margin-bottom: 15px;
+    }
+
+}
